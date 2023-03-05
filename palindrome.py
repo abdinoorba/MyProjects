@@ -1,14 +1,18 @@
-# s = input(" Enter a String: ")
-#
-# reverse = s[::-1]
-#
-# if reverse == s:
-#     print("The string is palindrome")
-# else:
-#     print("Not palindrome")
+def check_pal1(str):
+    
 
+    #str = input(" Enter a String: ")
 
-def check_pal(str):
+    reverse = str[::-1]
+
+    if reverse == str:
+        print("The string is palindrome")
+    else:
+        print("Not palindrome")
+
+        
+
+def check_pal2(str):
 
     concat = ""
     for i in range(len(str)-1, -1,-1):
@@ -21,4 +25,5 @@ def check_pal(str):
 
 str= "madam"
 
-check_pal(str)
+check_pal1(str)
+check_pal2(str)
